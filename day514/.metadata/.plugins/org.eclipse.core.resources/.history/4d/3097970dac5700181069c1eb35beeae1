@@ -1,0 +1,35 @@
+public class SimpleDotCom {
+int[] locationCells;
+int numOfHits = 0;
+public void setLocationCells(int[] locs) {
+locationCells = locs;
+}
+public String checkYourself(String stringGuess) {
+int guess = Integer.parseInt(stringGuess);
+String result = ¡°miss¡±;
+for (int cell : locationCells) {
+if (guess == cell) {
+result = ¡°hit¡±;
+numOfHits++;
+break;
+}
+} // out of the loop
+if (numOfHits ==
+locationCells.length) {
+result = ¡°kill¡±;
+}
+System.out.println(result);
+return result;
+} // close method
+} // close class
+What should we see
+when we run this code?
+The test code makes a
+SimpleDotCom object
+and gives it a location at
+2,3,4. Then it sends a fake
+user guess of ¡°2¡± into the
+checkYouself() method.
+If the code is working
+correctly, we should see the
+result print out

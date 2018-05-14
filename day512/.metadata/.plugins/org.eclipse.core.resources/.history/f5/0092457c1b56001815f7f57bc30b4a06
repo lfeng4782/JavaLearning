@@ -1,0 +1,17 @@
+package test2;
+
+class Clock {
+	String myTime;
+	public void SetTime(String t) {
+		myTime=t;
+	}
+	
+	public String GetTime() {
+		return myTime;
+	}
+	
+}
+
+public class test2{
+	
+}
